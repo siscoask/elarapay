@@ -6,18 +6,14 @@
 <meta name="theme-color" content="#FAF8F3">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="format-detection" content="telephone=no">
 <meta name="apple-mobile-web-app-title" content="ElaraPay">
 <meta name="description" content="ElaraPay — Wealth, Elevated.">
 <title>ElaraPay — Wealth, Elevated.</title>
-
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cellipse cx='32' cy='32' rx='26' ry='22' fill='none' stroke='%238B6F3A' stroke-width='2.5'/%3E%3Cellipse cx='32' cy='32' rx='19' ry='15' fill='none' stroke='%238B6F3A' stroke-width='0.8' opacity='0.4'/%3E%3Ccircle cx='32' cy='32' r='3.5' fill='%238B6F3A'/%3E%3Ccircle cx='32' cy='10' r='4' fill='%238B6F3A'%3E%3CanimateTransform attributeName='transform' type='rotate' from='0 32 32' to='360 32 32' dur='3s' repeatCount='indefinite'/%3E%3C/circle%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
 <link rel="manifest" href="manifest.json">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="icon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="icon-16.png">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Ccircle cx='90' cy='90' r='75' fill='%23FAF8F3'/%3E%3Cellipse cx='90' cy='90' rx='60' ry='50' fill='none' stroke='%238B6F3A' stroke-width='3'/%3E%3Cellipse cx='90' cy='90' rx='40' ry='32' fill='none' stroke='%238B6F3A' stroke-width='1' opacity='0.4'/%3E%3Ccircle cx='90' cy='90' r='8' fill='%238B6F3A'/%3E%3C/svg%3E">
 
 <style>
 /* ============================================================
@@ -61,7 +57,6 @@
   --shadow-md: 0 8px 32px rgba(28, 20, 16, 0.10);
   --shadow-lg: 0 20px 60px rgba(28, 20, 16, 0.14);
   --shadow-accent: 0 8px 32px rgba(139, 111, 58, 0.25);
-  --grain: none;
   --nav-bg: rgba(250, 248, 243, 0.92);
   --overlay: rgba(28, 20, 16, 0.5);
   --card-highlight: inset 0 1px 0 rgba(255,255,255,0.8);
@@ -95,7 +90,6 @@
   --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.5);
   --shadow-accent: 0 8px 32px rgba(196, 146, 58, 0.20);
-  --grain: none;
   --nav-bg: rgba(14, 11, 8, 0.92);
   --overlay: rgba(0, 0, 0, 0.7);
   --card-highlight: inset 0 1px 0 rgba(255,255,255,0.04);
@@ -129,7 +123,6 @@
   --shadow-md: 0 8px 32px rgba(26, 24, 32, 0.10);
   --shadow-lg: 0 20px 60px rgba(26, 24, 32, 0.14);
   --shadow-accent: 0 8px 32px rgba(139, 96, 122, 0.25);
-  --grain: none;
   --nav-bg: rgba(244, 244, 246, 0.92);
   --overlay: rgba(26, 24, 32, 0.5);
   --card-highlight: inset 0 1px 0 rgba(255,255,255,0.9);
@@ -164,7 +157,6 @@
   --shadow-md: 0 8px 32px rgba(0,0,0,0.45);
   --shadow-lg: 0 20px 60px rgba(0,0,0,0.55);
   --shadow-accent: 0 8px 32px rgba(184, 128, 152, 0.20);
-  --grain: none;
   --nav-bg: rgba(12, 11, 16, 0.92);
   --overlay: rgba(0,0,0,0.7);
   --card-highlight: inset 0 1px 0 rgba(255,255,255,0.04);
@@ -198,7 +190,6 @@
   --shadow-md: 0 8px 32px rgba(20, 28, 18, 0.10);
   --shadow-lg: 0 20px 60px rgba(20, 28, 18, 0.14);
   --shadow-accent: 0 8px 32px rgba(61, 107, 82, 0.25);
-  --grain: none;
   --radius-modifier: 0.9;
   --nav-bg: rgba(242, 244, 240, 0.92);
   --overlay: rgba(20, 28, 18, 0.5);
@@ -233,7 +224,6 @@
   --shadow-md: 0 8px 32px rgba(0,0,0,0.5);
   --shadow-lg: 0 20px 60px rgba(0,0,0,0.6);
   --shadow-accent: 0 8px 32px rgba(90, 148, 112, 0.20);
-  --grain: none;
   --nav-bg: rgba(9, 12, 8, 0.92);
   --overlay: rgba(0,0,0,0.72);
   --card-highlight: inset 0 1px 0 rgba(255,255,255,0.03);
@@ -246,9 +236,10 @@
    RESET & BASE
    ============================================================ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { height: 100%; font-size: 16px; }
+html { height: 100%; height: 100dvh; font-size: 16px; }
 body {
   height: 100%;
+  height: 100dvh;
   font-family: var(--font-body);
   background: var(--bg);
   color: var(--text-1);
@@ -258,7 +249,14 @@ body {
   -webkit-tap-highlight-color: transparent;
   transition: background 0.4s ease, color 0.4s ease;
 }
-/* grain removed — was causing GPU repaint on every scroll frame */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 1;
+}
 button { font-family: var(--font-body); cursor: pointer; border: none; background: none; }
 input, select, textarea { font-family: var(--font-body); }
 ::-webkit-scrollbar { width: 0; height: 0; }
@@ -281,6 +279,7 @@ input, select, textarea { font-family: var(--font-body); }
   position: fixed;
   inset: 0;
   z-index: 9000;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -330,20 +329,22 @@ input, select, textarea { font-family: var(--font-body); }
 #auth-screen {
   position: fixed;
   inset: 0;
+  min-height: 100dvh;
   z-index: 800;
   display: none;
   overflow-y: auto;
   background: var(--bg);
+  -webkit-overflow-scrolling: touch;
 }
 #auth-screen.active { display: block; }
 
 .auth-wrap {
-  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px 24px;
+  padding: max(40px, env(safe-area-inset-top)) 24px max(32px, env(safe-area-inset-bottom));
   max-width: 440px;
   margin: 0 auto;
 }
@@ -444,11 +445,10 @@ input, select, textarea { font-family: var(--font-body); }
   background: var(--bg-alt);
   border: 1.5px solid var(--border);
   border-radius: var(--radius-sm);
-  font-size: 16px;
+  font-size: 15px;
   color: var(--text-1);
   outline: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-  -webkit-appearance: none;
   appearance: none;
 }
 .field-input::-webkit-outer-spin-button,
@@ -556,12 +556,11 @@ input, select, textarea { font-family: var(--font-body); }
   width: 60%; height: 100%;
   background: linear-gradient(90deg, transparent, rgba(255,255,255,0.22), transparent);
   transform: skewX(-20deg);
-  animation: shimmerBtn 5s ease 0.5s infinite;
+  animation: shimmerBtn 3s ease-in-out infinite;
 }
 @keyframes shimmerBtn {
-  0% { left: -100%; opacity: 1; }
-  60% { left: 150%; opacity: 1; }
-  61%, 100% { left: 150%; opacity: 0; }
+  0% { left: -100%; }
+  40%, 100% { left: 150%; }
 }
 .btn-primary:hover { box-shadow: var(--shadow-accent), 0 0 0 3px var(--accent-light); transform: translateY(-1px); }
 .btn-primary:active { transform: scale(0.97) translateY(0); }
@@ -594,7 +593,7 @@ input, select, textarea { font-family: var(--font-body); }
 #main-app {
   display: none;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   position: relative;
 }
 #main-app.active { display: flex; }
@@ -693,11 +692,12 @@ input, select, textarea { font-family: var(--font-body); }
 .bottom-nav {
   position: fixed;
   bottom: 0; left: 0; right: 0;
-  z-index: 100;
-  padding: 8px 12px;
-  padding-bottom: max(12px, env(safe-area-inset-bottom));
-  background: transparent;
+  z-index: 200;
+  padding: 10px 16px;
+  padding-bottom: max(14px, env(safe-area-inset-bottom));
+  pointer-events: none;
 }
+.bottom-nav > * { pointer-events: all; }
 .bottom-nav-inner {
   display: flex;
   background: var(--nav-bg);
@@ -730,15 +730,10 @@ input, select, textarea { font-family: var(--font-body); }
 .nav-item.active::before {
   content: '';
   position: absolute;
-  top: 6px;
-  width: 20px; height: 2.5px;
+  top: 5px;
+  width: 18px; height: 3px;
   background: var(--accent);
   border-radius: 2px;
-  animation: navPillIn 0.3s var(--transition-spring) forwards;
-}
-@keyframes navPillIn {
-  from { width: 0; opacity: 0; }
-  to { width: 20px; opacity: 1; }
 }
 .nav-item svg { width: 22px; height: 22px; transition: transform 0.2s var(--transition-spring); }
 .nav-item.active svg { transform: scale(1.1); }
@@ -753,24 +748,21 @@ input, select, textarea { font-family: var(--font-body); }
   bottom: 0;
   overflow: hidden;
 }
-/* Extra scroll padding inside each page so content clears the fixed nav */
-.page { padding-bottom: calc(80px + max(12px, env(safe-area-inset-bottom))); }
 .page {
   position: absolute;
   inset: 0;
   overflow-y: auto;
   overflow-x: hidden;
   opacity: 0;
-  transform: translateY(10px) translateZ(0);
+  transform: translateY(10px);
   pointer-events: none;
-  transition: opacity 0.28s ease, transform 0.28s ease;
-  contain: layout style;
-  -webkit-overflow-scrolling: touch;
+  transition: opacity 0.35s ease, transform 0.35s ease;
 }
 .page.active {
   opacity: 1;
   transform: translateY(0);
   pointer-events: all;
+  padding-bottom: calc(88px + max(14px, env(safe-area-inset-bottom)));
 }
 .page-inner { padding-bottom: 0; }
 
@@ -833,7 +825,7 @@ input, select, textarea { font-family: var(--font-body); }
 /* Toast */
 .toast {
   position: fixed;
-  bottom: calc(90px + max(12px, env(safe-area-inset-bottom)));
+  bottom: calc(82px + max(14px, env(safe-area-inset-bottom)));
   left: 50%;
   transform: translateX(-50%) translateY(16px);
   background: var(--surface);
@@ -928,7 +920,7 @@ input, select, textarea { font-family: var(--font-body); }
 
 /* Page header */
 .page-header {
-  padding: 56px 24px 20px;
+  padding: max(52px, calc(env(safe-area-inset-top) + 24px)) 24px 20px;
 }
 .page-h-title {
   font-family: var(--font-display);
@@ -959,7 +951,7 @@ input, select, textarea { font-family: var(--font-body); }
    HOME PAGE
    ============================================================ */
 .home-header {
-  padding: 52px 24px 20px;
+  padding: max(52px, calc(env(safe-area-inset-top) + 24px)) 24px 20px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -1031,13 +1023,12 @@ input, select, textarea { font-family: var(--font-body); }
     var(--shimmer-2) 50%,
     transparent 70%
   );
-  background-size: 300% 100%;
-  animation: balanceShimmerOnce 1.4s ease forwards;
+  background-size: 200% 100%;
+  animation: balanceShimmer 1.2s ease forwards;
   pointer-events: none;
-  will-change: background-position;
 }
-@keyframes balanceShimmerOnce {
-  0% { background-position: 200% 0; opacity: 0.8; }
+@keyframes balanceShimmer {
+  0% { background-position: 200% 0; opacity: 0.7; }
   100% { background-position: -50% 0; opacity: 0; }
 }
 .balance-label {
@@ -1064,11 +1055,13 @@ input, select, textarea { font-family: var(--font-body); }
 }
 .balance-amount {
   font-family: var(--font-display);
-  font-size: 56px;
+  font-size: clamp(36px, 10vw, 52px);
   font-weight: 300;
   color: var(--text-1);
   line-height: 1;
   letter-spacing: -1px;
+  flex: 1;
+  min-width: 0;
 }
 .balance-eye {
   position: absolute;
@@ -1246,18 +1239,17 @@ input, select, textarea { font-family: var(--font-body); }
 /* FAB */
 .fab-btn {
   position: fixed;
-  bottom: calc(104px + max(16px, env(safe-area-inset-bottom)));
-  right: max(24px, env(safe-area-inset-right));
-  width: 58px; height: 58px;
+  bottom: calc(82px + max(14px, env(safe-area-inset-bottom)));
+  right: 20px;
+  width: 56px; height: 56px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
   border: none;
   display: flex; align-items: center; justify-content: center;
   color: #FAF8F3;
   box-shadow: var(--shadow-accent);
-  z-index: 40;
-  transition: transform 0.2s var(--transition-spring), box-shadow 0.2s ease;
-  animation: none;
+  z-index: 150;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 .fab-btn:hover { transform: scale(1.08); }
 .fab-btn:active { transform: scale(0.94); }
@@ -1277,8 +1269,9 @@ input, select, textarea { font-family: var(--font-body); }
 }
 .streak-dots { display: flex; gap: 6px; }
 .streak-dot {
-  width: 32px; height: 32px;
-  border-radius: 10px;
+  width: clamp(26px, 9vw, 32px);
+  height: clamp(26px, 9vw, 32px);
+  border-radius: 8px;
   border: 1px solid var(--border);
   display: flex; align-items: center; justify-content: center;
   font-size: 10px; font-weight: 600;
@@ -1575,7 +1568,7 @@ input, select, textarea { font-family: var(--font-body); }
   width: 60%; height: 100%;
   background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
   transform: skewX(-20deg);
-  animation: shimmerBtn 5s ease 0.5s infinite;
+  animation: shimmerBtn 3s ease-in-out infinite;
 }
 
 /* Goals */
@@ -1807,7 +1800,7 @@ input, select, textarea { font-family: var(--font-body); }
    ACCOUNT PAGE
    ============================================================ */
 .account-hero {
-  padding: 52px 24px 24px;
+  padding: max(52px, calc(env(safe-area-inset-top) + 24px)) 24px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2251,7 +2244,7 @@ input, select, textarea { font-family: var(--font-body); }
 /* Install banner */
 .install-banner {
   position: fixed;
-  bottom: 100px;
+  bottom: calc(80px + max(14px, env(safe-area-inset-bottom)));
   left: 16px; right: 16px;
   background: var(--surface);
   border: 1px solid var(--border);
@@ -2286,12 +2279,11 @@ input, select, textarea { font-family: var(--font-body); }
    ============================================================ */
 @media (min-width: 768px) {
   .side-nav { display: flex; }
-  .bottom-nav { display: none; }
-  .pages-wrap { bottom: 0; }
-  .fab-btn { right: 32px; bottom: 32px; }
+  .bottom-nav { display: none !important; }
+  .fab-btn { right: 32px; bottom: 32px; position: fixed; }
   .toast { bottom: 32px; }
+  .page.active { padding-bottom: 32px; }
   
-  /* Center content */
   .page-inner {
     max-width: 640px;
     margin: 0 auto;
@@ -2301,11 +2293,10 @@ input, select, textarea { font-family: var(--font-body); }
   .modal-sheet {
     border-radius: var(--radius-xl);
     max-width: 480px;
-    max-height: 85vh;
+    max-height: 88vh;
     border-bottom: 1px solid var(--border);
     margin-bottom: 0;
   }
-  .modal-bg.open .modal-sheet { transform: translateY(0); }
   
   .notif-panel {
     left: auto;
@@ -2321,136 +2312,87 @@ input, select, textarea { font-family: var(--font-body); }
 }
 
 /* ============================================================
-   PERFORMANCE & MOBILE POLISH
+   MOBILE — FINAL POLISH
    ============================================================ */
 
-/* GPU-promote scrolling layers */
-.page.active { will-change: auto; }
-.modal-sheet { will-change: transform; }
-.bottom-nav-inner { will-change: auto; }
-
-/* Prevent layout thrashing on scroll */
-.tx-row, .goal-card, .insight-card, .recip-card-btn {
-  contain: layout style;
-}
-
-/* Smooth momentum scrolling iOS */
-.page, .modal-sheet, .bank-list, .goals-row, .recip-row, .insight-strip {
+/* iOS momentum scroll on all scrollable areas */
+.page, .modal-sheet, .notif-panel, .bank-list, .goals-row,
+.recip-row, .insight-strip, .invest-scroll, .pay-grid {
   -webkit-overflow-scrolling: touch;
 }
 
-/* Prevent text size adjustment on rotation */
-html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
-
-/* Better tap response — removes 300ms delay */
+/* Prevent tap delay everywhere */
 * { touch-action: manipulation; }
-.page, .modal-sheet { touch-action: pan-y; }
+.page, .modal-sheet { touch-action: pan-y pinch-zoom; }
 
-/* Fix balance amount overflow on small phones */
-.balance-amount {
-  font-size: clamp(38px, 11vw, 56px);
-  word-break: break-all;
+/* Scrollbars hidden */
+::-webkit-scrollbar { display: none; }
+* { scrollbar-width: none; }
+
+/* Better active states on mobile */
+.tx-row:active { transform: scale(0.98); opacity: 0.85; }
+.btn-primary:active { transform: scale(0.96); }
+.quick-act:active .quick-act-icon { transform: scale(0.86); }
+
+/* Prevent layout shift when modal opens */
+body.modal-open { overflow: hidden; }
+
+/* Fix balance-currency vertical alignment */
+.balance-currency { flex-shrink: 0; }
+.balance-main { overflow: hidden; }
+
+/* Wealth total clamp */
+.wealth-hero-amount { font-size: clamp(36px, 11vw, 52px) !important; }
+
+/* Fix bank modal scroll on mobile */
+.bank-list { max-height: 60vh; overflow-y: auto; }
+
+/* Bottom nav items equal width, no overflow */
+.bottom-nav-inner { overflow: hidden; }
+.nav-item { overflow: hidden; min-width: 0; }
+.nav-label { overflow: hidden; white-space: nowrap; }
+
+/* Small phone specific */
+@media (max-width: 375px) {
+  .balance-card { margin: 0 16px 16px; padding: 20px 18px; }
+  .cashback-banner, .streak-bar, .spend-chart-wrap { margin-left: 16px; margin-right: 16px; }
+  .quick-grid { padding: 0 16px; gap: 8px; }
+  .quick-act-icon { width: 50px; height: 50px; border-radius: 15px; }
+  .quick-act-label { font-size: 10px; }
+  .sec-title { padding: 0 16px; font-size: 19px; }
+  .tx-list, .how-list, .settings-group, .feedback-wrap { padding-left: 16px; padding-right: 16px; }
+  .recip-row, .goals-row, .insight-strip { padding-left: 16px; }
+  .balance-pills { gap: 12px; }
+  .streak-dots { gap: 4px; }
 }
 
-/* Mobile nav item touch target — minimum 44×44px */
-.nav-item { min-height: 52px; }
-
-/* Fix auth card on tiny screens */
-@media (max-height: 660px) {
-  .auth-wrap { 
-    justify-content: flex-start; 
-    padding-top: max(28px, env(safe-area-inset-top));
-    min-height: 100dvh;
-  }
-  .auth-logo-wrap { margin-bottom: 16px; }
-  .auth-logo-wrap svg { width: 40px !important; height: 40px !important; }
-  .auth-brand { font-size: 26px; margin-top: 8px; }
-  .auth-card { padding: 20px 18px; }
-  .field-group { margin-bottom: 12px; }
-  .pin-pad { gap: 8px; max-width: 270px; }
+/* Very small phones */
+@media (max-width: 320px) {
+  .quick-act-icon { width: 44px; height: 44px; border-radius: 12px; }
+  .streak-dot { width: 24px !important; height: 24px !important; font-size: 9px; }
+  .home-name-line { font-size: 24px; }
 }
 
-/* Notif panel full-screen on mobile */
-@media (max-width: 767px) {
-  .notif-panel {
-    width: 100% !important;
-    border-left: none !important;
-  }
-}
-
-/* Desktop modal center */
-@media (min-width: 768px) {
-  .modal-bg { align-items: center; }
-  .modal-sheet {
-    border-radius: 28px;
-    max-height: 88vh;
-    border-bottom: 1px solid var(--border);
-  }
-  .pages-wrap { bottom: 0; }
-  .bottom-nav { display: none; }
-  .side-nav { display: flex; }
-  .fab-btn { right: 32px; bottom: 32px; }
-  .toast { bottom: 32px; }
-}
-
-/* Wealth hero amount clamp */
-.wealth-hero-amount {
-  font-size: clamp(38px, 10vw, 52px) !important;
-}
-
-/* Fix quick grid icons for very small screens */
-@media (max-width: 360px) {
-  .quick-act-icon { width: 48px !important; height: 48px !important; border-radius: 14px !important; }
-  .quick-act-label { font-size: 10px !important; }
-  .pay-cat-icon { width: 52px !important; height: 52px !important; border-radius: 16px !important; }
-  .balance-card { margin: 0 16px 16px !important; padding: 20px !important; }
-  .home-header, .page-header { padding-left: 16px !important; padding-right: 16px !important; }
-  .sec-title { padding: 0 16px !important; }
-  .tx-list { padding: 0 16px !important; }
-  .cashback-banner, .streak-bar { margin-left: 16px !important; margin-right: 16px !important; }
-}
-
-/* Install banner above nav */
-.install-banner {
-  bottom: calc(84px + max(8px, env(safe-area-inset-bottom))) !important;
-  z-index: 200;
-}
-
-/* Prevent modal scroll bleed */
-.modal-bg.open { overflow: hidden; }
-
-/* Smooth active states on mobile */
-.tx-row:active { transform: scale(0.98); transition: transform 0.1s ease; }
-.quick-act:active .quick-act-icon { transform: scale(0.88); }
-.nav-item:active { opacity: 0.7; }
-.btn-primary:active { transform: scale(0.97); }
-
-/* Fix sparkline on small screens */
+/* Fix pin pad sizing on narrow screens */
 @media (max-width: 380px) {
-  .sparkline-wrap { display: none !important; }
+  .pin-pad { max-width: min(280px, 82vw); gap: 8px; }
 }
 
-/* Loan slider thumb iOS fix */
-.loan-slider::-webkit-slider-thumb { -webkit-appearance: none !important; }
-.loan-slider::-moz-range-thumb { border: none; }
-
-/* Fix contenteditable resolve-name on mobile */
-.resolve-name {
-  -webkit-user-select: text !important;
-  user-select: text !important;
-  min-width: 60px;
-  max-width: 180px;
+/* Fix auth card on short phones (landscape / small) */
+@media (max-height: 650px) {
+  .auth-logo-wrap { margin-bottom: 12px; }
+  .auth-logo-wrap svg { width: 40px !important; height: 40px !important; }
+  .auth-brand { font-size: 24px; }
+  .auth-card { padding: 18px 18px; }
+  .field-group { margin-bottom: 10px; }
+  .auth-subtitle { display: none; }
 }
 
-/* Install banner dismiss touch target */
-.install-dismiss { 
-  padding: 8px;
-  min-width: 40px;
-  min-height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Notif panel: full width on mobile */
+@media (max-width: 767px) {
+  .notif-panel { width: 100% !important; }
 }
+
 </style>
 </head>
 <body>
@@ -3287,27 +3229,17 @@ function hydrate() {
 // ============================================================
 const fmt = (n) => new Intl.NumberFormat('en-NG', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(n);
 const fmtC = (n) => { if(n >= 1e6) return (n/1e6).toFixed(1)+'M'; if(n >= 1000) return (n/1000).toFixed(0)+'K'; return Math.round(n).toLocaleString(); };
-const _animCache = {};
 function animNum(elId, target, prefix='', compact=false, dur=1200) {
   const el = document.getElementById(elId);
   if (!el) return;
-  // Only animate if value actually changed
-  const cacheKey = elId;
-  const prev = _animCache[cacheKey];
-  if (prev === target) {
-    if (S.balVis) el.textContent = prefix + (compact ? fmtC(target) : fmt(target));
-    return;
-  }
-  _animCache[cacheKey] = target;
-  const from = prev !== undefined ? prev : 0;
   const start = performance.now();
-  let rafId;
+  const from = 0;
   (function tick(now) {
     const p = Math.min((now - start) / dur, 1);
     const eased = 1 - Math.pow(1 - p, 3);
     const val = from + (target - from) * eased;
     if (S.balVis) el.textContent = prefix + (compact ? fmtC(val) : fmt(val));
-    if (p < 1) { rafId = requestAnimationFrame(tick); }
+    if (p < 1) requestAnimationFrame(tick);
   })(start);
 }
 
@@ -3529,28 +3461,22 @@ function goPage(p) {
 // RENDER ALL
 // ============================================================
 function renderAll() {
-  // Render visible page immediately
   renderHome();
   buildQuickGrid();
+  buildPayGrid();
   buildInsights();
-  // Defer non-visible page renders to next frame
-  requestAnimationFrame(() => {
-    buildPayGrid();
-    buildPayFavs();
-    buildSmartSuggestions();
-    buildPayRecent();
-    buildRecentRecipients();
-    setTimeout(() => {
-      renderAccount();
-      renderWealth();
-      buildThemeGallery();
-      buildHowItWorks();
-      buildSettings();
-      buildStars();
-      initLoanSlider();
-      buildNotifs();
-    }, 80);
-  });
+  buildPayFavs();
+  buildSmartSuggestions();
+  buildPayRecent();
+  renderAccount();
+  renderWealth();
+  buildThemeGallery();
+  buildHowItWorks();
+  buildSettings();
+  buildStars();
+  buildRecentRecipients();
+  initLoanSlider();
+  buildNotifs();
 }
 
 function renderHome() {
@@ -3612,14 +3538,11 @@ function buildTxList() {
     </div>`).join('');
 }
 
-let _spendVals = null;
 function buildSpendChart() {
   const el = document.getElementById('spend-bars');
   if (!el) return;
-  if (el.children.length > 0) return; // already built, skip
   const cats = ['Food','Bills','Trans.','Shopping','Health','Data','Others'];
-  if (!_spendVals) _spendVals = cats.map(() => Math.random() * 100);
-  const vals = _spendVals;
+  const vals = cats.map(() => Math.random() * 100);
   const max = Math.max(...vals);
   el.innerHTML = cats.map((c, i) => `
     <div class="spend-bar-wrap">
@@ -3659,13 +3582,14 @@ function buildQuickGrid() {
   const el = document.getElementById('quick-grid');
   if (!el) return;
   const acts = [
-    { label: 'Add Money', color: 'var(--success-bg)', icon: '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/>', action: "openModal('modal-add-money')" },
-    { label: 'Request', color: 'var(--surface-2)', icon: '<polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/>', action: "switchTransTabDirect('request')" },
-    { label: 'Pay Bills', color: 'var(--surface-2)', icon: '<rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/>', action: "goPage('pay')" },
-    { label: 'Virtual Card', color: 'var(--accent-light)', icon: '<rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>', action: "goPage('wealth')" },
-    { label: 'Savings', color: 'var(--success-bg)', icon: '<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>', action: "openModal('modal-add-savings')" },
-    { label: 'Loan', color: 'var(--surface-2)', icon: '<line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>', action: "openLoanModal()" },
-    { label: 'Profile', color: 'var(--accent-light)', icon: '<circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>', action: "goPage('account')" },
+    { label: 'Add Money',    color: 'var(--success-bg)',    icon: '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/>',  action: "openModal('modal-add-money')" },
+    { label: 'Send Money',   color: 'var(--accent-light)',  icon: '<line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>',                                              action: "goPage('transfer')" },
+    { label: 'Request',      color: 'var(--surface-2)',     icon: '<polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/>', action: "switchTransTabDirect('request')" },
+    { label: 'Pay Bills',    color: 'var(--surface-2)',     icon: '<rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/>',                                          action: "goPage('pay')" },
+    { label: 'Virtual Card', color: 'var(--accent-light)',  icon: '<rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>', action: "goPage('wealth')" },
+    { label: 'Savings',      color: 'var(--success-bg)',    icon: '<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>', action: "openModal('modal-add-savings')" },
+    { label: 'Loan',         color: 'var(--surface-2)',     icon: '<line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>',                            action: "openLoanModal()" },
+    { label: 'Profile',      color: 'var(--surface-2)',     icon: '<circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>',                                                            action: "goPage('account')" },
   ];
   el.innerHTML = acts.map(a => `
     <div class="quick-act" onclick="${a.action}">
@@ -4179,8 +4103,6 @@ function regenerateCard() {
 // ============================================================
 function showReceiptModal(amount, to, bank, acct, ref, action='Sent', dt='') {
   const date = dt || new Date().toLocaleString('en-NG', { dateStyle:'medium', timeStyle:'short' });
-  // Store params for download button
-  window._lastReceipt = { amount, to, bank, acct, ref, action, date };
   document.getElementById('receipt-body').innerHTML = `
     <div class="receipt-header-block">
       <div class="receipt-stamp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
@@ -4195,15 +4117,9 @@ function showReceiptModal(amount, to, bank, acct, ref, action='Sent', dt='') {
     <div class="receipt-row"><div class="receipt-row-label">Status</div><div class="receipt-row-val" style="color:var(--success);font-weight:600;">Successful</div></div>
     <div class="receipt-actions-row">
       <button class="receipt-action-btn" onclick="shareReceipt(${amount},'${to}','${ref}')">Share</button>
-      <button class="receipt-action-btn primary" onclick="downloadLastReceipt()">Download</button>
+      <button class="receipt-action-btn primary" onclick="downloadReceipt(${amount},'${to}','${ref}')">Download</button>
     </div>`;
   openModal('modal-receipt');
-}
-
-function downloadLastReceipt() {
-  const r = window._lastReceipt;
-  if (!r) return showToast('No receipt to download', 'error');
-  downloadReceipt(r.amount, r.to, r.bank, r.acct, r.ref, r.action, r.date);
 }
 
 function showTxReceipt(id) {
@@ -4217,159 +4133,50 @@ function shareReceipt(amount, to, ref) {
   navigator.clipboard.writeText(txt).then(() => showToast('Receipt copied to clipboard', 'success')).catch(() => showToast('Copied', 'success'));
 }
 
-function downloadReceipt(amount, to, bank, acct, ref, action, dt) {
-  const W = 640, H = 920;
+function downloadReceipt(amount, to, ref) {
   const c = document.createElement('canvas');
-  c.width = W * 2; c.height = H * 2; // 2x retina
+  c.width = 600; c.height = 700;
   const ctx = c.getContext('2d');
-  ctx.scale(2, 2);
-
-  const bg = '#FAF8F3', surface = '#FFFFFF', text1 = '#1C1410';
-  const text3 = '#7A6D62', text4 = '#A89D94', accent = '#8B6F3A';
-  const border = 'rgba(139,111,58,0.15)', borderS = 'rgba(139,111,58,0.28)';
-  const success = '#3D6B52';
-
-  // ── Background ──
-  ctx.fillStyle = bg;
-  ctx.fillRect(0, 0, W, H);
-
-  // ── Card body ──
-  const pad = 40;
-  roundRect(ctx, pad, pad, W - pad*2, H - pad*2, 24, surface, border, 1);
-
-  // ── Accent top stripe ──
-  ctx.fillStyle = accent;
-  roundRect(ctx, pad, pad, W - pad*2, 6, 3, accent);
-
-  // ── Logo + name ──
-  ctx.fillStyle = accent;
-  ctx.font = '500 22px Georgia, serif';
+  // Background
+  ctx.fillStyle = '#FAF8F3';
+  ctx.fillRect(0, 0, 600, 700);
+  // Gold top bar
+  ctx.fillStyle = '#8B6F3A';
+  ctx.fillRect(0, 0, 600, 8);
+  // Title
+  ctx.fillStyle = '#1C1410';
+  ctx.font = '600 28px Georgia, serif';
   ctx.textAlign = 'center';
-  ctx.fillText('ElaraPay', W/2, pad + 52);
-  ctx.fillStyle = text4;
-  ctx.font = '300 11px Arial';
-  ctx.letterSpacing = '3px';
-  ctx.fillText('WEALTH, ELEVATED.', W/2, pad + 72);
-  ctx.letterSpacing = '0px';
-
-  // ── Divider ──
-  dashLine(ctx, pad + 30, pad + 90, W - pad - 30, pad + 90, borderS);
-
-  // ── Checkmark circle ──
-  const cx = W/2, cy = pad + 160, cr = 40;
-  ctx.beginPath();
-  ctx.arc(cx, cy, cr, 0, Math.PI*2);
-  ctx.strokeStyle = accent;
-  ctx.lineWidth = 2.5;
-  ctx.stroke();
-  // checkmark
-  ctx.beginPath();
-  ctx.moveTo(cx - 16, cy + 2);
-  ctx.lineTo(cx - 5, cy + 14);
-  ctx.lineTo(cx + 18, cy - 12);
-  ctx.strokeStyle = accent;
-  ctx.lineWidth = 2.5;
-  ctx.lineCap = 'round';
-  ctx.lineJoin = 'round';
-  ctx.stroke();
-
-  // ── Amount ──
-  ctx.fillStyle = text1;
-  ctx.font = '300 56px Georgia, serif';
-  ctx.textAlign = 'center';
-  ctx.fillText('₦' + fmt(amount), W/2, cy + 90);
-
-  // ── Status ──
-  ctx.fillStyle = success;
-  ctx.font = '500 13px Arial';
-  ctx.textAlign = 'center';
-  ctx.fillText('Transfer ' + (action || 'Sent') + ' Successfully', W/2, cy + 116);
-
-  // ── Rows ──
-  const rowStartY = cy + 150;
-  const rowH = 58;
-  const rowLeft = pad + 30;
-  const rowRight = W - pad - 30;
-  const rows = [
-    [action === 'Received' ? 'From' : 'Recipient', to],
-    bank ? ['Bank', bank] : null,
-    acct ? ['Account', acct] : null,
-    ['Date & Time', dt || new Date().toLocaleString('en-NG', {dateStyle:'medium',timeStyle:'short'})],
-    ['Reference', ref],
-    ['Status', 'Successful'],
-  ].filter(Boolean);
-
-  rows.forEach(([label, val], i) => {
-    const y = rowStartY + i * rowH;
-    // separator
-    if (i > 0) {
-      ctx.strokeStyle = border;
-      ctx.lineWidth = 1;
-      ctx.beginPath();
-      ctx.moveTo(rowLeft, y - 1);
-      ctx.lineTo(rowRight, y - 1);
-      ctx.stroke();
-    }
-    ctx.fillStyle = text4;
-    ctx.font = '400 11px Arial';
-    ctx.textAlign = 'left';
-    ctx.fillText(label.toUpperCase(), rowLeft, y + 14);
-    ctx.fillStyle = label === 'Status' ? success : text1;
-    ctx.font = label === 'Status' ? '600 14px Arial' : '500 14px Arial';
-    ctx.textAlign = 'right';
-    // truncate long values
-    const maxW = rowRight - rowLeft - 100;
-    let v = String(val);
-    while (ctx.measureText(v).width > maxW && v.length > 8) v = v.slice(0,-4) + '...';
-    ctx.fillText(v, rowRight, y + 14);
+  ctx.fillText('ElaraPay Receipt', 300, 70);
+  // Amount
+  ctx.fillStyle = '#8B6F3A';
+  ctx.font = '300 52px Georgia, serif';
+  ctx.fillText('₦' + fmt(amount), 300, 160);
+  // Details
+  ctx.fillStyle = '#4A3F35';
+  ctx.font = '400 16px Arial, sans-serif';
+  ctx.textAlign = 'left';
+  const rows = [['To', to], ['Reference', ref], ['Status', 'Successful'], ['Powered by', 'ElaraPay']];
+  rows.forEach(([l, v], i) => {
+    ctx.fillStyle = '#9A8C78';
+    ctx.fillText(l, 80, 240 + i * 56);
+    ctx.fillStyle = '#1C1410';
+    ctx.font = '500 16px Arial, sans-serif';
+    ctx.fillText(v, 80, 266 + i * 56);
+    ctx.fillStyle = '#EDE7DC';
+    ctx.fillRect(80, 278 + i * 56, 440, 1);
+    ctx.font = '400 16px Arial, sans-serif';
   });
-
-  // ── Bottom dashed divider ──
-  const footerY = rowStartY + rows.length * rowH + 16;
-  dashLine(ctx, pad + 30, footerY, W - pad - 30, footerY, borderS);
-
-  // ── Footer ──
-  ctx.fillStyle = text4;
-  ctx.font = '300 12px Georgia, serif';
+  // Footer
+  ctx.fillStyle = '#9A8C78';
+  ctx.font = '300 13px Georgia, serif';
   ctx.textAlign = 'center';
-  ctx.fillText('Powered by ElaraPay · Wealth, Elevated.', W/2, footerY + 28);
-  ctx.fillStyle = borderS;
-  ctx.font = '400 10px Arial';
-  ctx.fillText(new Date().getFullYear() + ' © ElaraPay. All transactions are simulated.', W/2, footerY + 46);
-
+  ctx.fillText('Wealth, Elevated.', 300, 660);
   const link = document.createElement('a');
-  link.download = 'ElaraPay-Receipt-' + (ref || Date.now()) + '.png';
-  link.href = c.toDataURL('image/png', 1.0);
+  link.download = `ElaraPay-Receipt-${ref}.png`;
+  link.href = c.toDataURL();
   link.click();
   showToast('Receipt downloaded', 'success');
-}
-
-function roundRect(ctx, x, y, w, h, r, fill, stroke, sw) {
-  ctx.beginPath();
-  ctx.moveTo(x + r, y);
-  ctx.lineTo(x + w - r, y);
-  ctx.quadraticCurveTo(x + w, y, x + w, y + r);
-  ctx.lineTo(x + w, y + h - r);
-  ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
-  ctx.lineTo(x + r, y + h);
-  ctx.quadraticCurveTo(x, y + h, x, y + h - r);
-  ctx.lineTo(x, y + r);
-  ctx.quadraticCurveTo(x, y, x + r, y);
-  ctx.closePath();
-  if (fill) { ctx.fillStyle = fill; ctx.fill(); }
-  if (stroke) { ctx.strokeStyle = stroke; ctx.lineWidth = sw || 1; ctx.stroke(); }
-}
-
-function dashLine(ctx, x1, y1, x2, y2, color) {
-  ctx.save();
-  ctx.setLineDash([6, 4]);
-  ctx.strokeStyle = color;
-  ctx.lineWidth = 1;
-  ctx.beginPath();
-  ctx.moveTo(x1, y1);
-  ctx.lineTo(x2, y2);
-  ctx.stroke();
-  ctx.restore();
 }
 
 // ============================================================
@@ -4594,37 +4401,23 @@ function genNotifs() {
 // ============================================================
 function registerSW() {
   if (!('serviceWorker' in navigator)) return;
-  const swCode = `
-const CACHE = 'elarapay-v3';
-const ASSETS = ['/'];
-self.addEventListener('install', e => {
-  e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));
-});
-self.addEventListener('activate', e => {
-  e.waitUntil(clients.claim());
-});
-self.addEventListener('fetch', e => {
-  e.respondWith(
-    caches.match(e.request).then(cached => {
-      return cached || fetch(e.request).then(res => {
-        const clone = res.clone();
-        caches.open(CACHE).then(c => c.put(e.request, clone));
-        return res;
-      });
-    }).catch(() => caches.match('/'))
-  );
-});
-  `;
-  const blob = new Blob([swCode], { type: 'application/javascript' });
-  const url = URL.createObjectURL(blob);
-  navigator.serviceWorker.register(url).catch(() => {});
+  navigator.serviceWorker.register('sw.js').catch(() => {});
 }
 
 // ============================================================
 // PWA INSTALL
 // ============================================================
 function initInstall() {
-  // PWA install is handled by the global beforeinstallprompt listener below
+  // Handled by global beforeinstallprompt listener
+  const cta = document.getElementById('install-cta');
+  if (cta) cta.addEventListener('click', async () => {
+    if (!deferredPrompt) return;
+    deferredPrompt.prompt();
+    const { outcome } = await deferredPrompt.userChoice;
+    deferredPrompt = null;
+    document.getElementById('install-banner').classList.remove('show');
+    if (outcome === 'accepted') showToast('ElaraPay installed!', 'success');
+  });
 }
 
 // ============================================================
@@ -4666,24 +4459,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }, 2000);
 });
 
-// PWA: Service Worker Registration
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('sw.js')
-      .then(reg => console.log('SW registered'))
-      .catch(err => console.log('SW registration failed'));
-  });
-}
+// SW registered via registerSW() above
 
 // PWA: Dynamic Favicon (updates with theme)
 function updateFavicon() {
-  // Static PNG icons — just update theme-color meta
   const isDark = S.theme && S.theme.includes('dark');
   const mc = document.querySelector('meta[name="theme-color"]');
   if (mc) mc.setAttribute('content', isDark ? '#0E0B08' : '#FAF8F3');
 }
-
-// Favicon is a static PNG file
 
 // PWA: Install prompt
 let deferredPrompt = null;
